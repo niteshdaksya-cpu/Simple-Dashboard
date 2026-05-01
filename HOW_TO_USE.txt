@@ -1,0 +1,34 @@
+LOCATION DASHBOARD - HOW TO USE
+================================
+
+FOLDER STRUCTURE
+----------------
+Location_Dashboard_v2/
+├── dashboard_AI.html            ← Open this in browser (double-click)
+├── dashboard_template_base.html ← Template file (do NOT delete)
+├── update_data.bat              ← Run this after Excel update
+├── update_data.py               ← Python script (runs via .bat)
+└── data/
+    ├── All_Data_DUmmy.xlsx      ← Your main data (update this)
+    └── Infra___IT_filled.xlsx   ← Infra/IT data (update this)
+
+DAILY WORKFLOW
+--------------
+Step 1: Update Excel file(s) inside the 'data' folder
+Step 2: Double-click  update_data.bat
+Step 3: Wait for "✅ dashboard_AI.html updated!" message
+Step 4: Double-click  dashboard_AI.html  to open in browser
+
+REQUIREMENTS
+------------
+Python 3.x  →  https://www.python.org/downloads/
+             (Check "Add to PATH" during install)
+
+First-time install libraries:
+  Open CMD and run:  pip install pandas openpyxl
+
+TROUBLESHOOTING
+---------------
+"Python not found"  → Reinstall Python with "Add to PATH" checked
+"Module not found"  → Run: pip install pandas openpyxl
+Data not updating   → Make sure Excel file is saved before running bat
